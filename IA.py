@@ -2,8 +2,12 @@
 from openai import OpenAI
 import operacionesIA
 import asistente
+import os
 
-client = OpenAI(api_key=bridges.buzz)
+buzz = os.getenv("buzz")
+#print("Esto es llave: ", buzz)
+
+client = OpenAI(api_key=buzz)
 
 def getMacronutrientes(prompt):
     return operacionesIA.consulta(asistente.macronutrientes, prompt)
