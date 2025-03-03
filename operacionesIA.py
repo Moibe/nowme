@@ -2,8 +2,12 @@ import bridges
 from openai import OpenAI
 import time 
 import asistente
+import os
 
-client = OpenAI(api_key=bridges.buzz)
+buzz = os.getenv("buzz")
+print("Esto es llave: ", buzz)
+
+client = OpenAI(api_key=buzz)
 
 def consulta(asistente, prompt):
     thread = preparaPregunta(prompt)
