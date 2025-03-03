@@ -1,4 +1,4 @@
-import bridges
+#import bridges
 from openai import OpenAI
 import time 
 import asistente
