@@ -4,7 +4,7 @@ emoji: 🔥
 colorFrom: purple
 colorTo: purple
 sdk: docker
-pinned: false
+pinned: true
 license: mit
 short_description: NowMe! API.
 ---
