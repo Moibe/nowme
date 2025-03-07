@@ -7,17 +7,17 @@ def obtenClienteOpenAI():
     if local_check():
         print("Estoy en LOCAL...")
         time.sleep(18)
-        import bridges
-        buzz = bridges.buzz
-        llave = bridges.llave
+        # import bridges
+        # buzz = bridges.buzz
+        # llave = bridges.llave
     else:
         print("Estoy en REMOTO...")
         time.sleep(18)
-        buzz = os.getenv("buzz")
-        llave = os.getenv("llave")
+        # buzz = os.getenv("buzz")
+        # llave = os.getenv("llave")
 
-    client = OpenAI(api_key=buzz)
-    return client
+    # client = OpenAI(api_key=buzz)
+    # return client
 
 def local_check(): 
 
