@@ -23,7 +23,7 @@ def local_check():
     #r-moibe-nowme
     print("Dentro de local_check... , el hostname es: ", hostname)
 
-    if hostname == 'r-moibe-nowme-9odaken2-89247-qbpii':
+    if "r-moibe-nowme" in hostname:
         print("Ejecutando en el servidor")
         return False
     else:
