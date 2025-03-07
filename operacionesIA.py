@@ -1,13 +1,7 @@
-#import bridges
-from openai import OpenAI
 import time 
-import asistente
-import os
+import herramientas
 
-buzz = os.getenv("buzz")
-print("Esto es llave: ", buzz)
-
-client = OpenAI(api_key=buzz)
+client = herramientas.obtenClienteOpenAI()
 
 def consulta(asistente, prompt):
     thread = preparaPregunta(prompt)
@@ -33,7 +27,7 @@ def ejecutaLlamado(thread, asistente):
         assistant_id=asistente  
     )
 
-    # 4️⃣ Esperar a que el asistente termine de procesar
+    #Esperar a que el asistente termine de procesar
     while True:
         run_status = client.beta.threads.runs.retrieve(
             thread_id=thread.id,
@@ -43,7 +37,7 @@ def ejecutaLlamado(thread, asistente):
             break
         time.sleep(2)  # 🔄 Espera 2 segundos antes de revisar de nuevo
 
-    # 5️⃣ Obtener la respuesta del asistente
+    #Obtener la respuesta del asistente
     messages = client.beta.threads.messages.list(thread_id=thread.id)
     for msg in messages.data:
         if msg.role == "assistant":
