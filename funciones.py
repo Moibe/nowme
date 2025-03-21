@@ -34,3 +34,6 @@ def getCircuito(prompt):
 
 def getSumatoria(prompt):
     return operacionesIA.consulta(asistente.distribucion_sumatoria, prompt)
+
+def getCardio(prompt):
+    return operacionesIA.consulta(asistente.distribucion_sumatoria, prompt)

@@ -86,3 +86,11 @@ async def macronutrientes(prompt: str):
         summary="3C.- Obtener Distribución en Sumatoria")
 async def macronutrientes(prompt: str):
     return funciones.getSumatoria(prompt)
+
+#6.- Obtener distribución de cardio.
+@app.post(
+        "/cardio/",
+        tags=["Entrenamiento"],
+        summary="4.- Obtener Distribución en Cardio")
+async def macronutrientes(prompt: str):
+    return funciones.getSumatoria(prompt)
