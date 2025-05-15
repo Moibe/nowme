@@ -14,7 +14,7 @@ def obtenClienteOpenAI():
         buzz = os.getenv("buzz")
         llave = os.getenv("llave")
 
-    client = OpenAI(api_key=buzz)
+    client = OpenAI(api_key=llave) #Usa Buzzword o Moibe.
     return client
 
 def local_check(): 
