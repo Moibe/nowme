@@ -1,10 +1,19 @@
-#ASISTENTES DE NUTRICIÓN
-macronutrientes = "asst_9JBQUaVq1Z2hsEhWIub9skHl"
-comidas = "asst_EJIfpgocC28VHCw2B6V6MduR"
-#alimentos = "asst_CjpwbK3oURVXkrkCz00TxTRv" #Modificado
-alimentos = "asst_Lj6Qr0qhHnOsnIeErMWf9BYd"
-receta = "asst_b48NBLlvk7cXUdp8DcLxAvsM"
-sustitucion = "asst_YsHcJZ5IBpRkVM4M6Wmf5d2w"
+#ASISTENTES DE NUTRICIÓN (ORIGINALES CARPETA BUZZWORD)
+# macronutrientes = "asst_9JBQUaVq1Z2hsEhWIub9skHl"
+# comidas = "asst_EJIfpgocC28VHCw2B6V6MduR"
+# #alimentos = "asst_CjpwbK3oURVXkrkCz00TxTRv" #Modificado
+# alimentos = "asst_Lj6Qr0qhHnOsnIeErMWf9BYd"
+# receta = "asst_b48NBLlvk7cXUdp8DcLxAvsM"
+# sustitucion = "asst_YsHcJZ5IBpRkVM4M6Wmf5d2w"
+
+
+#ASISTENTES DE NUTRICIÓN (ORIGINALES CARPETA MOIBE)
+macronutrientes = "asst_m0RVaxDSW2wOSKtVb9KemaOG"
+comidas = "asst_fyG0xEMa1ZyzznV1XyXQksuv"
+alimentos = "asst_vhaB4GH3Xnn4iG8IpTTD2UXu"
+receta = "asst_23WDw6jxC4RkdF45uJKyJ2tr"
+sustitucion = "asst_571o62XL9aiRvuXaYSDpoZIG"
+
 
 #ASISTENTES DE ENTRENAMIENTO 
 grupos_musculares = "asst_ysObLKTwE1kD5XvwAhRMZr78"
