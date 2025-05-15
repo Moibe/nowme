@@ -2,6 +2,8 @@ import time
 import herramientas
 
 client = herramientas.obtenClienteOpenAI()
+print("El cliente es: ", client)
+
 
 def consulta(asistente, prompt):
     thread = preparaPregunta(prompt)
