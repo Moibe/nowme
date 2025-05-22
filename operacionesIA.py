@@ -28,7 +28,7 @@ def ejecutaLlamado(thread, asistente):
         thread_id=thread.id,
         assistant_id=asistente  
     )
-
+    
     #Esperar a que el asistente termine de procesar
     while True:
         run_status = client.beta.threads.runs.retrieve(
